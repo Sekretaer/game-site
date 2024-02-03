@@ -1,0 +1,58 @@
+extends ../layouts/pages-layout 
+
+block title 
+    -var title="GTA V"
+
+block content
+    header 
+        .gta-box 
+            .container 
+                .row 
+                    .col-xxl-6.col-xl-6.col-lg-6.col-md-12 
+                        .hero-section.pt-5 
+                            h1.hero-title.text-white.m-0 GTA V
+                            p.hero-desc.text-white.my-5 
+                                |Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae, saepe reprehenderit, expedita officiis deleniti laborum eum officia recusandae, porro nulla rerum temporibus. Esse, exercitationem veniam impedit dolore enim ea.
+                            p.hero-desc.text-white 
+                                |Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam maiores id iusto, tempora vero repudiandae nostrum sequi dolorem commodi! Saepe maxime tenetur dicta totam est assumenda quae eligendi consequatur!
+            .img-mobile
+                img(src="./img/pic/gta-big.png", alt="")
+    main 
+        section.gallery.pt-5
+            .container-xl.p-0 
+                .container 
+                    h1.gallery-title Галереа
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                img(src="/img/pic/slider/gta-slide-1.png", alt="")
+                            .swiper-slide 
+                                img(src="/img/pic/slider/gta-slide-2.png", alt="")
+                        .swiper-button-next 
+                        .swiper-button-prev
+        section.articles.py-5
+            .container-xl.p-0
+                .container 
+                    h1.gallery-title Статьи
+                    .row 
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src="./img/pic/articles/gta-article-1.png", alt="")
+                                    h5.card-title Рецензиа на GTA V:
+                                    p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src="./img/pic/articles/gta-article-2.png", alt="")
+                                    h5.card-title Рецензиа на GTA V:
+                                    p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src="./img/pic/articles/gta-article-3.png", alt="")
+                                    h5.card-title Рецензиа на GTA V:
+                                    p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    a.btn.btn-primary(href="#") Читать

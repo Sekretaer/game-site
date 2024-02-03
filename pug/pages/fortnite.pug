@@ -1,0 +1,58 @@
+extends ../layouts/pages-layout 
+
+block title 
+    -var title="Fortnite"
+
+block content
+    header 
+        .fortnite-box 
+            .container 
+                .row 
+                    .col-xxl-6.col-xl-6.col-lg-6.col-md-12 
+                        .hero-section.pt-5 
+                            h1.hero-title.text-white.m-0 Fortnite
+                            p.hero-desc.text-white.my-5 
+                                |Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita sapiente, nam fugit quis delectus nobis, illum nemo alias blanditiis voluptatem eos! Nihil nobis minima ipsa, enim omnis voluptatem quisquam.
+                            p.hero-desc.text-white 
+                                |Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod nostrum provident, officia quae accusantium est repudiandae aliquid, reprehenderit, vitae enim consequatur placeat voluptates quia iure dignissimos sequi aspernatur pariatur eligendi.
+            .img-mobile
+                img(src="./img/pic/fortnite-big.png", alt="")
+    main 
+        section.gallery.pt-5
+            .container-xl.p-0 
+                .container 
+                    h1.gallery-title Галереа
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                img(src="/img/pic/slider/fortnite-slide-1.png", alt="")
+                            .swiper-slide 
+                                img(src="/img/pic/slider/fortnite-slide-2.png", alt="")
+                        .swiper-button-next 
+                        .swiper-button-prev
+        section.articles.py-5
+            .container-xl.p-0
+                .container 
+                    h1.gallery-title Статьи
+                    .row 
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src="./img/pic/articles/fortnite-article-1.png", alt="")
+                                    h5.card-title Рецензиа на Fortnite Season 4.
+                                    p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src="./img/pic/articles/fortnite-article-2.png", alt="")
+                                    h5.card-title Рецензиа на Fortnite Season 4.
+                                    p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src="./img/pic/articles/fortnite-article-3.png", alt="")
+                                    h5.card-title Рецензиа на Fortnite Season 4.
+                                    p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    a.btn.btn-primary(href="#") Читать
